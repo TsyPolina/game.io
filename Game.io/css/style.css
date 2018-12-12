@@ -1,0 +1,111 @@
+@font-face{
+    font-family: "mainFont";
+    src:url(../resources/fonts/12870.otf);
+}
+
+body{ 
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../resources/mainStage/menuPhoto.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin: auto;
+    font-family: mainFont;
+}
+h1{
+    margin: auto;
+    font-size: 63pt;
+    font-weight: 100; 
+    background: linear-gradient(#a8c975, #5a861f);  
+    -webkit-background-clip: text; 
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+header{
+    margin-bottom: 49px;
+    text-align: center;
+}
+#menu{
+    margin-top:100px;
+    text-align: center;
+}
+#menu li{
+    background: linear-gradient(#ffffff, #424242);  
+    -webkit-background-clip: text; 
+    color: transparent;
+    list-style-type:none;
+    font-size: 40pt;
+    margin-top:35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+#menu li:hover{
+    font-size: 50pt;
+}
+.hidden{
+    display: none !important;
+}
+#textAboutGame{
+    max-width:1200px ;
+    margin: 0 auto; 
+}
+p{
+    text-align: center;
+    font-size: 28pt;
+    color: #e0e0e0e0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.headline{
+    font-size: 55pt;
+    background: linear-gradient(#a8c975, #5a861f);  
+    -webkit-background-clip: text; 
+    color: transparent;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.gnomeBack{
+    height: 100px;
+    width: 180px;
+}
+.scoreTadel{
+max-width: 1200px;
+background:linear-gradient( rgba(46, 32, 32, 0.3), rgba(46, 32, 32, 0.3) ), url(../resources/image/backgroundTabelScore.jpg);
+margin: auto;
+display: grid;
+grid-template-columns:50% 50%;
+border:5px solid rgb(46, 32, 32);
+border-radius: 20%;
+}
+.headlineInTabel{
+    display: grid;
+    grid-template-columns:50% 50%;
+    border-bottom: 5px dashed rgb(46, 32, 32);
+    grid-column: 1 / span 2;
+}
+.characters{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns:50% 50%;
+    margin:auto;
+    margin-top:150px; 
+    text-align: center;
+}
+.hero{
+   width: 200px;   
+}
+/* .hero:hover{
+    width: 230px;  
+} */
+.nameHero{
+    font-size:45pt;
+    margin-top:-30px; 
+    margin-bottom:0px; 
+}
+.dipperCard:hover .dipper {
+width: 220px;
+}
+.maibleCard:hover .maible {
+    width: 220px;
+    }
