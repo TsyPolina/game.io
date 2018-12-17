@@ -2,6 +2,10 @@
     font-family: "mainFont";
     src:url(../resources/fonts/12870.otf);
 }
+@font-face{
+    font-family: "modalFont";
+    src:url(../resources/fonts/12907.otf);
+}
 
 body{ 
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../resources/mainStage/menuPhoto.jpg);
@@ -9,6 +13,7 @@ body{
     background-position:center;
     background-size: cover;
     margin: auto;
+
     font-family: mainFont;
 }
 h1{
@@ -70,13 +75,13 @@ p{
     width: 180px;
 }
 .scoreTadel{
-max-width: 1200px;
-background:linear-gradient( rgba(46, 32, 32, 0.3), rgba(46, 32, 32, 0.3) ), url(../resources/image/backgroundTabelScore.jpg);
-margin: auto;
-display: grid;
-grid-template-columns:50% 50%;
-border:5px solid rgb(46, 32, 32);
-border-radius: 20%;
+    max-width: 1200px;
+    background:linear-gradient( rgba(46, 32, 32, 0.3), rgba(46, 32, 32, 0.3) ), url(../resources/image/backgroundTabelScore.jpg);
+    margin: auto;
+    display: grid;
+    grid-template-columns:50% 50%;
+    border:5px solid rgb(46, 32, 32);
+    border-radius: 20%;
 }
 .headlineInTabel{
     display: grid;
@@ -85,19 +90,28 @@ border-radius: 20%;
     grid-column: 1 / span 2;
 }
 .characters{
+
     max-width: 800px;
     display: grid;
     grid-template-columns:50% 50%;
     margin:auto;
     margin-top:150px; 
-    text-align: center;
 }
-.hero{
+.dipper{
    width: 200px;   
 }
-/* .hero:hover{
-    width: 230px;  
-} */
+.mabel{
+    width: 185px;
+}
+.dipperCard{
+    width: 200px; 
+  margin: auto;
+}
+.mabelCard{
+    width: 200px; 
+    margin: auto;
+}
+
 .nameHero{
     font-size:45pt;
     margin-top:-30px; 
@@ -106,6 +120,70 @@ border-radius: 20%;
 .dipperCard:hover .dipper {
 width: 220px;
 }
-.maibleCard:hover .maible {
-    width: 220px;
-    }
+
+.mabelCard:hover .mabel {
+    width: 205px;
+}
+#inputName{
+    text-align: center;
+    background:#cebc88 ;
+    height: 80px;
+    font-size:40pt; 
+    color:#fff;
+    border:none; 
+    vertical-align:middle;
+    outline:none;
+
+}
+.aboutName{
+text-align:center;
+}
+.sayHi{
+    height: 400px;
+    text-align: center;
+}
+.speakForm{
+    background-color:#DBBD5B; 
+    height: 200px;
+    width: 300px;
+    border-radius:20% ;
+    margin:auto;
+    font-family: modalFont;
+    font-size: 18pt;
+    color: #e0e0e0e0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.square{
+    margin:auto;
+	width: 0px;
+	height: 0px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #DBBD5B;
+}
+.nameChangeQuestion{
+    font-size:22pt;
+}
+.speakDiv{
+  position: relative;
+  top:20px;
+  text-align: center;
+}
+.buttoninModalWindowsNewName{
+    position: relative;
+    top:-20px;
+   margin-top: -20px;
+    font-family: modalFont;
+    font-size: 18pt;
+    color: #e0e0e0e0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-color:rgb(177, 138, 12); 
+    border-radius: 10%;
+    border: 2px solid rgb(155, 120, 7);
+}
+.choiceClothes{
+    display: grid;
+    grid-template-columns:auto auto;
+}

@@ -6,7 +6,6 @@
     <title>GRAVITY FALLS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="resources/image/icon.jpg"/>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <script src="scrips/main.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -27,17 +26,50 @@
             <section class="hidden" id="choiceGender" >
                 <h2 class="headline" >Choose who you will play</h2>
                 <div class="characters">
-                    <div class="dipperCard"><p class="nameHero">Dipper</p><img src="resources/image/Dipper.png" class="dipper hero"></div>
-                    <div class="MaibleCard"><p class="nameHero">Maible</p><img src="resources/image/Maidle.png" class="maible hero"></div>
-                  
+                    <div class="dipperCard" id="dipperId"><p class="nameHero">Dipper</p><img src="resources/image/Dipper.png" class="dipper hero"></div>
+                    <div class="mabelCard"><p class="nameHero">Mabel</p><img src="resources/image/Maidle.png" class="mabel hero"></div>
+                </div>
+            </section>
+            <section class="hidden" id="askName" >
+                <section id="modalWindowNewName">
+                <div class="speakForm"><div class="speakDiv"><span id="textAboutName"></span>
+                    <p class="nameChangeQuestion">Do you want it?</p>
+                    <button class="buttoninModalWindowsNewName" id="yes">Yes</button>
+                    <button class="buttoninModalWindowsNewName" id="no">No</button>
+                </div>
+                </div>
+                <div class="square"></div>
+                <div class="sayHi"><img src="resources/image/dipper/dippeSayHi.png" class="sayHi hidden" id="dipperSayHi"><img src="resources/image/mabel/mabelSayHi.png" class="sayHi hidden" id="mabelSayHi"></div></div>
+             </section>
+                <div class="hidden" id="giveNewName">
+                <h2 class="headline" >Choose name</h2>
+                <input id="inputName">
                 </div>
 
             </section>
-            <section class="enterName hidden" >
-
-            </section>
-            <section class="choiceClothes hidden" >
-
+            <section class="choiceClothes hidden" id="choiceClothes" >
+                <div></div>
+                <div>
+                    <p>HEAD</p>
+                    <ul>
+                    <li id="firstHead">1</li>
+                    <li id="secondHead">2</li>
+                    <li id="thirdHead">3</li>
+                </ul>
+                    <p>BODY</p>
+                    <ul>
+                    <li id="firstBoby">4</li>
+                    <li id="secondBoby">5</li>
+                    <li id="thirdBoby">6</li>
+                    <p>LEGS</p>
+                     <ul>
+                    <li id="firstLegs">7</li>
+                    <li id="secondLegs">8</li>
+                    <li id="thirdLegs">9</li>
+                </ul>
+                </div>
+                
+                <button>Play</button>
             </section>
 
         </section>   
@@ -63,7 +95,7 @@
         <section class="hidden" id="textAboutGame">
             <h2 class="headline">About game</h2> 
             <p>This game is based onthe animated television series Gravity Falls. 
-                Dipper and his sister Mable come to Gravity Falls to spend the summer holidays with uncle Stan. Things are not what they seem in this small town,
+                Dipper and his sister MabeL come to Gravity Falls to spend the summer holidays with uncle Stan. Things are not what they seem in this small town,
                 and with the help of a mysterious journal, that Dipper finds in the forest, they begin fighing with supernatural creatures.</p>
             <p>Help them defeat all creatures and save the city from destruction.</p>
         
